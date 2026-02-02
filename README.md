@@ -1,4 +1,4 @@
-# Calendar PWA
+# Calendar PWA  (注意:当前是demo级)
 
 中国农历日历PWA应用 - 支持农历、节日、节气查询
 
