@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中国日历 - 农历、节日、节气查询">
+    <meta name="theme-color" content="#3366FF">
+    <link rel="icon" type="image/png" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>日历 - 中国农历万年历</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="calendar-header">
+            <div class="header-top">
+                <h1>日历</h1>
+            </div>
+            <div class="header-controls">
+                <div class="control-group">
+                    <select id="holidayType" class="holiday-select">
+                        <option value="all">全部</option>
+                        <option value="legal">法定假日</option>
+                        <option value="traditional">传统节日</option>
+                        <option value="solar">节气</option>
+                    </select>
+
+                    <div class="year-month-controls">
+                        <select id="yearSelect" class="year-select"></select>
+                        <button id="prevMonth" class="nav-btn" aria-label="上个月">◀</button>
+                        <select id="monthSelect" class="month-select"></select>
+                        <button id="nextMonth" class="nav-btn" aria-label="下个月">▶</button>
+                    </div>
+
+                    <button id="todayBtn" class="today-btn">今天</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="calendar-main">
+            <div class="calendar-grid-container">
+                <div class="weekday-header">
+                    <div class="weekday">一</div>
+                    <div class="weekday">二</div>
+                    <div class="weekday">三</div>
+                    <div class="weekday">四</div>
+                    <div class="weekday">五</div>
+                    <div class="weekday weekend">六</div>
+                    <div class="weekday weekend">日</div>
+                </div>
+                <div id="calendarGrid" class="calendar-grid"></div>
+            </div>
+
+            <div class="info-panel">
+                <div id="lunarInfo" class="lunar-info">
+                    <h3 id="lunarTitle">农历信息</h3>
+                    <div id="lunarDetails" class="lunar-details">
+                        <p>选择日期查看详情</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "lunar-javascript": "https://esm.run/lunar-javascript@1.7.7"
+      }
+    }
+    </script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+
+</html>

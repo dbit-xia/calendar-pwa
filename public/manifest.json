@@ -1,0 +1,30 @@
+{
+    "name": "中国日历",
+    "short_name": "日历",
+    "description": "中国农历万年历 - 查询农历、节日、节气",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F5F7FA",
+    "theme_color": "#3366FF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "productivity",
+        "utilities"
+    ],
+    "lang": "zh-CN",
+    "dir": "ltr"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "calendar-pwa",
+    "version": "1.0.0",
+    "description": "中国农历日历PWA应用",
+    "main": "index.html",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "serve": "npx http-server public -p 8080 -o"
+    },
+    "keywords": [
+        "calendar",
+        "lunar",
+        "pwa",
+        "chinese"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "lunar-javascript": "^1.7.7"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3",
+        "@types/node": "^20.10.6"
+    }
+}
